@@ -170,7 +170,7 @@
     "eventemitter2": "5.0.1",
     "fclone": "1.0.11",
     "fs-extra": "^5.0.0",
-    "keymetrics-agent": "^0.3.5",
+    "keymetrics-agent": "^0.4.0",
     "mkdirp": "0.5.1",
     "moment": "^2.19",
     "needle": "^2.2.0",
@@ -186,7 +186,7 @@
     "source-map-support": "^0.5",
     "sprintf-js": "1.1.1",
     "v8-compile-cache": "^1.1.0",
-    "vizion": "^0.2",
+    "vizion": "^2.0.0",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
