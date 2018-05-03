@@ -40,7 +40,7 @@ $pm2 delete all
 
 $pm2 serve . 8000 --name frontend
 should 'should have started serving dir' 'online' 1
-should 'should have custom name' 'frontend' 7
+should 'should have custom name' 'frontend' 6
 
 curl http://localhost:8000/index.html > /tmp/tmp_out.txt
 OUT=`cat /tmp/tmp_out.txt | grep -o "good shit" | wc -l`

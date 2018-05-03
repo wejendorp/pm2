@@ -12,7 +12,7 @@ $pm2 kill
 cd homogen-json-action
 
 $pm2 start all.json
-should 'should start process' 'online' 6
+should 'should start process (homogen)' 'online' 6
 should 'should all script been restarted 0 time' 'restart_time: 0' 6
 
 $pm2 start all.json

@@ -1,6 +1,6 @@
 
 
-var pmx = require('pmx');
+var pmx = require('@keymetrics/pmx');
 var conf = pmx.init();
 
 var http = require('http');

@@ -1,4 +1,4 @@
-var pmx = require('pmx').init({
+var pmx = require('@keymetrics/pmx').init({
   http : true
 });
 
