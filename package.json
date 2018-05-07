@@ -1,7 +1,10 @@
 {
-  "name": "pm2",
+  "name": "@wejendorp/pm2-fix",
   "preferGlobal": true,
   "version": "2.10.3",
+  "publishConfig": {
+    "registry": "https://npm-upload.tradeshift.net/repository/npm-internal/"
+  },
   "engines": {
     "node": ">=0.12"
   },
@@ -87,11 +90,13 @@
     }
   ],
   "homepage": "http://pm2.keymetrics.io/",
-  "description": "Production process manager for Node.JS applications with a built-in load balancer.",
+  "description":
+    "Production process manager for Node.JS applications with a built-in load balancer.",
   "main": "index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "test": "NODE_ENV=test bash test/pm2_check_dependencies.sh && NODE_ENV=test bash test/pm2_programmatic_tests.sh && NODE_ENV=test bash test/pm2_behavior_tests.sh",
+    "test":
+      "NODE_ENV=test bash test/pm2_check_dependencies.sh && NODE_ENV=test bash test/pm2_programmatic_tests.sh && NODE_ENV=test bash test/pm2_behavior_tests.sh",
     "bench-pmx": "pm2 delete all; pm2 install pm2-probe; node examples/pmx/app.js; pm2 ls"
   },
   "keywords": [
@@ -191,9 +196,6 @@
   "devDependencies": {
     "mocha": "^3.5",
     "should": "^11"
-  },
-  "optionalDependencies": {
-    "gkt": "https://tgz.pm2.io/gkt-1.0.0.tgz"
   },
   "bugs": {
     "url": "https://github.com/Unitech/pm2/issues"
